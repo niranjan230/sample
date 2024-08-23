@@ -1,0 +1,258 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .logo {
+    width: 1500px;
+    height: 80px;
+    background-image: url('C:\Users\Kn994\my-react-app\src\logo.jpg');
+    background-size: contain;
+    margin-left: 6cm;
+    background-repeat: no-repeat;
+  }
+  
+  .nav-logo img {
+    height: 45px;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-left: auto;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    color: rgb(247, 247, 247);
+    text-decoration: none;
+    font-size: 19px;
+  }
+  
+  .find-tutor-btn {
+    background-color: #ff007a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  
+  
+  /* Hero Section Styles */
+  .hero2-section {
+    
+    height: 68vh;
+    background-image: url('C:\Users\Kn994\my-react-app\src\components\bg-06-free-img.jpg'); /* Use your own background image here */
+      
+    background-size: cover;
+    background-position: center 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    
+  }
+  
+  .sub2-heading {
+    font-size: 5rem;
+    margin-top: 1cm;
+    margin-bottom: -3cm;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(253, 250, 250);
+  }
+  
+  .hero2-section h1 {
+    font-size:2rem;
+    margin-top: 1cm;
+    margin-bottom: 20spx;
+  
+  }
+  .hero2-section h2{
+    margin-top: -1cm;
+    font-size: 2rem;
+  }
+  .hero2-section h1 span {
+    text-decoration: underline;
+  }
+  .about-section {
+    padding: 50px;
+    background-color: #f5f5f5;
+  }
+  
+  .about-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-us1 {
+    color: #e91e63;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 0.7cm;
+  }
+  
+  .about-title {
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000;
+    margin-bottom: 25px;
+  }
+  
+  .divider {
+    width: 60px;
+    margin: 20px auto;
+    border: 0;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 1cm;
+    margin-top: 1cm;
+  }
+  
+  .about-description {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10cm;
+    max-width: 900px;
+    margin: 0 auto;
+    
+    
+  }
+
+  .about-vision-mission {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+    border-top: 1px solid #ddd;
+    margin-top: 2cm;
+    text-align: center;
+    margin-bottom: 4cm;
+  }
+  
+  .vision, .mission {
+    flex: 0 0 48%;
+  }
+  
+  .vision-title, .mission-title {
+    color: #e91e63;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .vision-text, .mission-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.4;
+  }
+  /* Image Section */
+.niranjan {
+  height: 50vh; /* Adjust height as needed */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('C:\\Users\\Kn994\\my-react-app\\src\\Auditability.jpg'); /* Update with correct image path */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 300px;
+  padding-top: 300px;
+  margin-bottom: 3cm;
+}
+
+/* Text Section Below the Image */
+.language-learning-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 80px;
+  background: linear-gradient(to right, #f5f5f5, #f5f5f5);
+  margin-bottom: 3cm;
+}
+
+.language-learning-left {
+  max-width: 40%;
+}
+
+.section-title {
+  color: #ff007f;
+  margin-bottom: 10px;
+}
+
+.section-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.language-learning-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 55%;
+}
+
+.learning-feature {
+  display: flex;
+  align-items: flex-start;
+}
+
+.feature-icon {
+  font-size: 24px;
+  color: #ff007f;
+  margin-right: 10px;
+}
+
+.feature-title {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+
+.feature-description {
+  margin: 0;
+  color: #6c6c6c;
+}
+.divider1 {
+  width: 1399px;
+  margin: 20px auto;
+  border: 0;
+  height: 1px;
+  background-color: #ada3a3;
+  margin-bottom: 3cm;
+  margin-top: 2cm;
+}

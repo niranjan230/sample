@@ -1,0 +1,193 @@
+* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .logo {
+    width: 1500px;
+    height: 80px;
+    background-image: url('C:\Users\Kn994\my-react-app\src\logo.jpg');
+    background-size: contain;
+    margin-left: 6cm;
+    background-repeat: no-repeat;
+  }
+  
+  .nav-logo img {
+    height: 45px;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-left: auto;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    color: rgb(247, 247, 247);
+    text-decoration: none;
+    font-size: 19px;
+  }
+  
+  .find-tutor-btn {
+    background-color: #ff007a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  
+  
+  /* Hero Section Styles */
+  .hero-section3 {
+    
+    height: 68vh;
+    background-image: url('C:\Users\Kn994\my-react-app\src\components\bg-002-free-img.jpg'); /* Use your own background image here */
+      
+    background-size: cover;
+    background-position: center 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    
+  }
+  
+  .sub-heading3 {
+    font-size: 5rem;
+    margin-top: 1cm;
+    margin-bottom: -3cm;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(253, 250, 250);
+  }
+  
+  .hero-section3 h1 {
+    font-size:2rem;
+    margin-top: 1cm;
+    margin-bottom: 20spx;
+  
+  }
+  .hero-section3 h2{
+    margin-top: -1cm;
+    font-size: 2rem;
+  }
+  .hero-section3 h1 span {
+    text-decoration: underline;
+  }
+  
+
+
+  
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #f9f9f9;
+    margin-top: 3cm;
+    margin-bottom: 3cm;
+  }
+  
+  .form-container {
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+ 
+  
+
+  
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .name-fields {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .name-fields input {
+    width: 48%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .submit-button {
+    width: 10%;
+    padding: 15px;
+    background-color: #ff0077;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #e6006a;
+  }
+  
+  
+  

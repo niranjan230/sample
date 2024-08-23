@@ -1,0 +1,140 @@
+import { render } from "@testing-library/react";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+
+const pizzaData = [
+  {
+    name: "Focaccia",
+    ingredients: "Bread with italian olive oil and rosemary",
+    price: 6,
+    photoName: "pizzas/focaccia.jpg",
+    soldOut: false,
+  },
+  {
+    name: "Pizza Margherita",
+    ingredients: "Tomato and mozarella",
+    price: 10,
+    photoName: "pizzas/margherita.jpg",
+    soldOut: false,
+  },
+  {
+    name: "Pizza Spinaci",
+    ingredients: "Tomato, mozarella, spinach, and ricotta cheese",
+    price: 12,
+    photoName: "pizzas/spinaci.jpg",
+    soldOut: false,
+  },
+  {
+    name: "Pizza Funghi",
+    ingredients: "Tomato, mozarella, mushrooms, and onion",
+    price: 12,
+    photoName: "pizzas/funghi.jpg",
+    soldOut: false,
+  },
+  {
+    name: "Pizza Salamino",
+    ingredients: "Tomato, mozarella, and pepperoni",
+    price: 15,
+    photoName: "pizzas/salamino.jpg",
+    soldOut: true,
+  },
+  {
+    name: "Pizza Prosciutto",
+    ingredients: "Tomato, mozarella, ham, aragula, and burrata cheese",
+    price: 18,
+    photoName: "pizzas/prosciutto.jpg",
+    soldOut: false,
+  },
+];
+
+function App(){
+  return(
+    <div>
+      <h1> <Header /></h1>
+      
+      <Pizza />
+      <Menu />
+      
+      
+      
+    </div>
+  );
+}
+ 
+function Pizza(Props) { 
+  console.log(Props);
+  return<div>
+    <img src ={Props.photoName}alt={Props.name} />
+    <h2>{Props.name}</h2>
+  <p>
+    {Props.ingredients}
+
+  </p>
+
+
+  </div> 
+}
+
+
+function Menu(){
+  return(
+    <div>
+    <main className="menu">
+<h2>Our Menu</h2>
+<Pizza name ='pizza Spinaci'
+photoName="pizzas/spinaci.jpg" />
+
+
+<Pizza name="pizza funghi" ingredients='dough,veggies'price='12'
+photoName="pizzas/funghi.jpg"
+
+p/>
+    </main>
+    </div>
+  );
+}
+
+function Niranjan(){
+  return<div>
+  <img src ="pizzas/funghi.jpg"/>
+  </div>
+}
+
+function Header(){
+  const style = {};
+  return<div className=".container">
+   
+   <h1 >
+      hi! this is react pizza store.
+    </h1>
+  </div>
+
+}
+
+
+function Footer (){
+  return(
+    <footer className="footer">{new Date().toLocaleDateString()}<h1>
+    {new Date ().toLocaleTimeString()}. niranjan</h1></footer>
+  )
+}
+function Heder() {
+  return (
+    <h1 style={{color: "red"}}>
+      hi! this is react pizza store.
+    </h1>
+  );
+}
+
+
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
+    <App />
+    
+  </StrictMode>
+);
